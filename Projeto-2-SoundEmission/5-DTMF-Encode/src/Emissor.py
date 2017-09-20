@@ -42,3 +42,6 @@ class Emissor(object):
         plt.plot(value, label='values')
         plt.legend(loc='upper right')
         plt.show()
+
+if __name__ == "__main__":
+    Emissor().main()
