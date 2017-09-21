@@ -17,7 +17,7 @@ def main(value1,value2):
     # aguarda fim da reprodução
     sd.wait()
     plot(x,S)
-    plot(x,fft(S))
+    plot(x,np.abs(fft(S)))
 
 def createSin(f,x):
     return np.sin(2 * math.pi * x * f) 
