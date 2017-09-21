@@ -21,8 +21,8 @@ class Decoder():
             sd.wait()
             self.audio = self.audio[:,0]
             save = pickle.dump(self.audio,open("Save.p","wb"))
-            #self.openF()
             drawnow(self.plot)
+            drawnow(self.plotF)
             plt.pause(0.0001)
     
     def openF(self):
@@ -31,13 +31,20 @@ class Decoder():
         time.sleep(0.2)
 
     def plot(self):
-        plt.title('Valores de')
+        plt.title('Sond Wave')
         plt.grid(True)
-        plt.ylabel("propriedade")
+        plt.ylabel("values")
         #plt.savefig("./plots/graphDecoder.png", dpi = 72)
         plt.plot(self.audio[43100:])
         plt.legend(loc='upper right')
         
+    def plotF(self):
+        plt.title('Fourier')
+        plt.grid(True)
+        plt.ylabel("values")
+        #plt.savefig("./plots/graphDecoder.png", dpi = 72)
+        plt.plot((np.abs(fft(self.audio))))
+        plt.legend(loc='upper right')
         
 if __name__ == "__main__":
     Decoder().main()         

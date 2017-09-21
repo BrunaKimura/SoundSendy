@@ -17,7 +17,7 @@ def main(value1,value2):
     # aguarda fim da reprodução
     sd.wait()
     plot(x,S)
-    plot(x,np.abs(fft(S)))
+    plotF(x,np.abs(fft(S)))
 
 def createSin(f,x):
     return np.sin(2 * math.pi * x * f) 
@@ -25,10 +25,15 @@ def createSin(f,x):
 def plot(x,value):
     plt.title('Sond Wave')
     plt.ylabel('Values')
-    #plt.ylim(-50,50)
     plt.plot(x[43100:], value[43100:], label='values')
     plt.legend(loc='upper right')
-    #plt.savefig("./plots/graphEncoder.png", dpi = 72)
+    plt.show()
+
+def plotF(x,value):
+    plt.title('Fourier')
+    plt.ylabel('Values')
+    plt.plot(x[:], value[:], label='values')
+    plt.legend(loc='upper right')
     plt.show()
 
 if __name__ == "__main__":
