@@ -5,11 +5,13 @@ import matplotlib.pyplot as plt
 import math
 from drawnow import *
 import time
+import pickle
 
 class Decoder():
     def __init__(self):
         self.duration = 1
         self.fs = 44100
+
         
     def main(self):
         self.x = np.linspace(0, 1, self.fs * 1)        
@@ -18,8 +20,15 @@ class Decoder():
             self.audio = sd.rec(int(self.duration * self.fs), self.fs, channels=1)
             sd.wait()
             self.audio = self.audio[:,0]
+            save = pickle.dump(self.audio,open("Save.p","wb"))
+            #self.openF()
             drawnow(self.plot)
             plt.pause(0.0001)
+    
+    def openF(self):
+        openFile = pickle.load(open("Save.p","rb"))
+        sd.play(openFile,self.fs)
+        time.sleep(0.2)
 
     def plot(self):
         plt.title('Valores de')

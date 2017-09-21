@@ -59,7 +59,7 @@ class Menu_Principal():
         self.window1.configure(background = 'white')
         
         # Geometria da pagina        
-        self.window1.rowconfigure(0, minsize = 100)
+        self.window1.rowconfigure(0, minsize = 95)
         self.window1.rowconfigure(1, minsize = 50)
         self.window1.rowconfigure(2, minsize = 100)
         self.window1.rowconfigure(3, minsize = 50)
@@ -68,14 +68,14 @@ class Menu_Principal():
         self.window1.columnconfigure(0, minsize = 280)
                 
         self.Logo = ImageTk.PhotoImage(Image.open("./interface_imgs/Logo.png"))
-        self.Logo_label = tk.Label(self.window1,image = self.Logo, height = 2, width = 1)
+        self.Logo_label = tk.Label(self.window1,image = self.Logo, height = 4, width = 30)
         self.Logo_label.grid(row = 0, column = 0, sticky = "nsew")
         
-        self.button_Emissor = tk.Button(self.window1, text = "Encoder",background = "#0093e1", height = 4, width = 30)        
+        self.button_Emissor = tk.Button(self.window1, text = "Encoder",background = "#90caf9", height = 4, width = 30)        
         self.button_Emissor.grid(row = 2, column = 0)
         self.button_Emissor.configure(command = self.rodaEmissor)
 
-        self.button_Receptor = tk.Button(self.window1, text = "Decoder",background = "#0093e1", height = 4, width = 30)        
+        self.button_Receptor = tk.Button(self.window1, text = "Decoder",background = "#90caf9", height = 4, width = 30)        
         self.button_Receptor.grid(row = 4, column = 0)
         self.button_Receptor.configure(command = self.rodaReceptor)
 
