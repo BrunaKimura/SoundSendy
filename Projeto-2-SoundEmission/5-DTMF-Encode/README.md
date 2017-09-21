@@ -23,7 +23,7 @@ A escolha destas frequências se deve principalmente pela baixa probabilidade de
 
 ## Descrição da frequência que compõe cada tom
 
-    não entendi o que por aqui
+    Sao utilizadas duas frequencias que formam ondas senoidais, somando-as se tem cada tom.
 
 ## Comparação de gráficos recebidos e gerados
 <h1> Tom 0 </h1>
