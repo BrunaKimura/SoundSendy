@@ -2,25 +2,23 @@ import numpy as np
 import sounddevice as sd
 from scipy.fftpack import fft, ifft
 import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 import math
-import drawnow
+from drawnow import *
 import time
+import sounddevice as sd
 
-class Recebedor():
-    def __init__(self):
-        self.duration = 2  
-        self.fs = 44100
+fs = 44100
+fig = plt.figure()
+ax1 = fig.add_subplot(1,1,1)
+duration = 1
 
-    def main(self):
-        myrecording = sd.rec(int(self.duration * self.fs), samplerate=self.fs, channels=2)
-        plt.ion()
-        while(sd.wait()):
-            self.recording_fft = fft(myrecording)
-            drawnow(self.plot)
-           
-    def plot(self):
-        plt.plot(self.recording_fft)
-        plt.pause(0.02)
+x = np.linspace(0, 1 , fs*1)
+def animate(i):
+    print('dsad')
+    audio = sd.rec(int(duration*fs), fs, channels=1)
+    ax1.clear()
+    ax1.plot(x[0:1000],audio[0:1000])
 
-if __name__ == "__main__":
-    Recebedor().main()          
+ani = animation.FuncAnimation(fig, animate, interval = 1000)
+print('vai carai')
