@@ -16,7 +16,7 @@ def main(value1,value2):
 
     # aguarda fim da reprodução
     sd.wait()
-    #plot(x,S)
+    plot(x,S)
     plot(x,fft(S))
 
 def createSin(f,x):
