@@ -1,76 +1,103 @@
 ---
 title: Camada Física -  APS 5 - DTMF - Encoder e recepção
-author: Rafael Corsi - rafael.corsi@insper.edu.br
+author: Hugo Mendes e Leonardo Pereira 
 date: Setembro - 2017
 ---
 
-![DTMF](doc/sistema.png)
+# Docs
 
-*Entrega : Até o começo da aula do dia 21/9*
+## Descrição da geração de tons
 
-# Novas Duplas
+Foi usado a tabela DTMF (Dual-Tone Multi-Frequency) abaixo:
 
-Favor preencher o form com informações das novas duplas :
+Hz|1209 |1336|1477|1633|
+|---|---|---|---|---|
+697|1   |2   |3   | A  |   |
+770| 4|   5|   6| B  |
+852| 7  | 8  | 9  | C  |
+941| *  | 0 | #  | D  |
 
-**Um novo repositório deve ser criado !!!**
- - https://goo.gl/forms/hE9Aow318dYQtO5u1
+Na tabela acima são mostradas as frequências “altas” na linha superior e as baixas na coluna mais à esquerda.
+A frequência é obtida do batimento da frequência alta e baixa de uma certa tecla, por exemplo, para a tecla 5 o tom enviado é a soma de uma senóide na frequência de 1336Hz com uma outra senóide de 770Hz.
+A escolha destas frequências se deve principalmente pela baixa probabilidade de se produzir estas combinações de frequências com a voz humana.
 
+## Descrição da frequência que compõe cada tom
 
-# APS 5 : DTMF - Encoder e recepção.
+    não entendi o que por aqui
 
-Implementar a codificação dos números 0,1,..9 em código DTMF, transmitir o sinal pelo falante de um computador e fazer o recebimento do áudio em outro computador. Não é necessário implementar a decodificação.
+## Comparação de gráficos recebidos e gerados
+<h1> Tom 0 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder0.png" width="350"/>
+  <img src="./src/plots/sound0.jpg" width="350"/>
+</p>
 
-- [Lista aula 9 ](https://github.com/Insper/Camada-Fisica-Computacao/blob/master/2-Aulas/9-DTMF/9-Lista-DTMF.pdf)
+<h1> Tom 1 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder1.png" width="350"/>
+  <img src="./src/plots/sound1.jpg" width="350"/>
+</p>
 
-## Dicas
+<h1> Tom 2 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder2.png" width="350"/>
+  <img src="./src/plots/sound2.jpg" width="350"/>
+</p>
 
-Algumas dicas de implementação podem ser lidas em : 
- 
-- [Dicas](https://github.com/Insper/Camada-Fisica-Computacao/blob/master/3-Projetos/5-DTMF-Encode/5-DTMF-Dicas-Encoder.md)
+<h1> Tom 3 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder3.png" width="350"/>
+  <img src="./src/plots/sound3.jpg" width="350"/>
+</p>
 
-# Requisitos
+<h1> Tom 4 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder4.png" width="350"/>
+  <img src="./src/plots/sound4.jpg" width="350"/>
+</p>
 
-Requisitos de projeto :
+<h1> Tom 5 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder5.png" width="350"/>
+  <img src="./src/plots/sound5.jpg" width="350"/>
+</p>
 
-1. encoderDTMF.py
-    - Geração dos tons
-        - Gerar os tons DTMF para cada um dos símbolos (0,1,..9)
-        - Para cada símbolo plotar os sinais gerados (no tempo)
+<h1> Tom 6 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder6.png" width="350"/>
+  <img src="./src/plots/sound6.jpg" width="350"/>
+</p>
 
-1. decoderDTMF.py
-    - Recepção de áudio
-        - Deve receber um áudio pelo microfone
-        - A cada 1 segundo plotar o sinal recebido pelo microfone.
-    - Tons
-        - Receber cada um dos tons (1 segundo) e salvar os sinais para uso futuro.
-    
-1. Documentação
-    - Descrever a geração dos tons
-    - Descrever as frequências que compõem cada tom
-    - Plotar e comentar os gráficos de cada tom com o do gerado e recebido.
-    
-## Itens extras
+<h1> Tom 7 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder7.png" width="350"/>
+  <img src="./src/plots/sound7.jpg" width="350"/>
+</p>
 
-1. Interface gráfica para transmitir os tons
-1. Exibir a transformada de Fourier dos sinais (transmitido e recuperado)
+<h1> Tom 8 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder8.png" width="350"/>
+  <img src="./src/plots/sound8.jpg" width="350"/>
+</p>
 
-## Validação
+<h1> Tom 9 </h1>
+<div align="center"> Onda Gerada X Onda Recebida </div>
+<p align="center">
+  <img src="./src/plots/graphEncoder9.png" width="350"/>
+  <img src="./src/plots/sound9.jpg" width="350"/>
+</p>
 
-- Gerar os tons e validar com um aplicativo no celular.
-- Reproduzir o sinal salvo dos tons.
+<h1> Considerações em relação aos gráficos </h1>
 
-## Rubricas
-
-| Nota máxima | Descritivo                                                |
-|-------------|-----------------------------------------------------------|
-| A           | - Entregue no prazo                                       |
-|             | - Implementado extras                                     |
-| B           | - Entregue no prazo                                       |
-|             | - Implementado requisitos necessários                     |
-| C           | - Entregue fora do prazo                                  |
-|             | - Implementando requisitos necessários                    |
-| D           | - Nem todos os requisitos necessários foram implementados |
-| I           | - Não entregue                                            |
-
-
-
+Consideremos satisfatório as comparações finais obtidas nos gráficos. Obviamente não estavam 100% iguais, devido ao fato
+que as ondas geradas pelo Encoder foram feitas a partir de funções senoidas específicas e "limpas", o que é praticamente 
+impossível de detectar no decoder por causa de ruídos externos; é possível diminuir os erros através de filtros.
