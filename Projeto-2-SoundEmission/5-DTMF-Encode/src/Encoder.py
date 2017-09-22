@@ -17,24 +17,17 @@ def main(value1,value2):
     # aguarda fim da reprodução
     sd.wait()
     plot(x,S)
-    plotF(x,np.abs(fft(S)))
 
 def createSin(f,x):
     return np.sin(2 * math.pi * x * f) 
 
 def plot(x,value):
-    plt.title('Sond Wave')
-    plt.ylabel('Values')
-    plt.plot(x[43100:], value[43100:], label='values')
-    plt.legend(loc='upper right')
-    plt.show()
-
-def plotF(x,value):
-    plt.title('Fourier')
-    plt.ylabel('Values')
-    plt.plot(x[:], value[:], label='values')
-    plt.legend(loc='upper right')
+    f, axarr = plt.subplots(2, sharex=False)
+    axarr[0].plot(x[43100:], value[43100:])
+    axarr[0].set_title('Sond Wave')
+    axarr[1].plot(x, np.abs(fft(value)))
+    axarr[1].set_title('Fourier')
     plt.show()
 
 if __name__ == "__main__":
-    main()
+   main()

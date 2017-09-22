@@ -83,7 +83,7 @@ class Menu_Principal():
         self.window1.tkraise()
     
     def rodaReceptor(self):
-        Decoder.Decoder().main()
+        Decoder.main()
         
     def rodaEmissor(self):
         self.janela_principal.mostrar_emissor() 

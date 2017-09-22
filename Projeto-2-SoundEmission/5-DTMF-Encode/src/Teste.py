@@ -5,17 +5,18 @@ import sounddevice as sd
 import numpy as np
 
 fs = 44100
-fig = plt.figure()
-ax1 = fig.add_subplot(1,1,1)
+f, axarr = plt.subplots(2, sharex=False)
+x = np.linspace(0, 1 , fs * 1)    
 duration = 1
 
 def animate(i):
     audio = sd.rec(int(duration*fs), fs, channels=1)
     sd.wait()
-    x = np.linspace(0, 1 , fs * 1)    
     s = audio[:,0]
-    ax1.clear()
-    ax1.plot(s[43100:])
+    axarr[0].clear()
+    axarr[1].clear()
+    axarr[0].plot(x[43100:],s[43100:])
+    axarr[1].plot(x,np.abs(fft(s)))
 
-ani = animation.FuncAnimation(fig, animate, interval = 1000)
+ani = animation.FuncAnimation(f, animate, interval = 100)
 plt.show()
