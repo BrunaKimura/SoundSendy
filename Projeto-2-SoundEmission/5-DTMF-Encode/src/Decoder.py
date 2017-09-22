@@ -21,7 +21,9 @@ def animate(i):
     sf.write(Path(),s,fs)
     axarr[0].clear()
     axarr[1].clear()
+    axarr[0].set_title('Sond Wave')
     axarr[0].plot(x[43100:],s[43100:])
+    axarr[1].set_title('Fourier')
     axarr[1].plot(x,np.abs(fft(s)))
 
 def Path():
