@@ -267,6 +267,8 @@ class Receptor_window():
     
     def Carregar(self):
         filename = filedialog.askopenfilename()
+        print("Len :", len(filename))
+        print(filename)
         Decoder.main(filename)
     
     def On_tfly(self):

@@ -8,11 +8,12 @@ import soundfile as sf
 def main(value1,value2):
     t = 1
     fs = 44100
+    
     # cria o som
     x = np.linspace(0, t, fs * t)
     S = createSin(value1,x) + createSin(value2,x)
     sf.write(Path(),S,fs)
-  
+    
     # reproduz o som
     sd.play(S,fs)
 
