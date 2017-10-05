@@ -37,7 +37,6 @@ def plot(x,value):
 def Decibel(value):
     new = []
     for i in range (len(value)):
-        print(value[i])
         newvalue = 10* math.log10(value[i]/20000)
         new.append(newvalue)
     return new
