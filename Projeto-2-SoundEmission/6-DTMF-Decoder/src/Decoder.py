@@ -6,6 +6,7 @@ import soundfile as sf
 import numpy as np
 from scipy.io.wavfile import read
 import peakutils
+import math
 
 fs = 44100
 f, axarr = plt.subplots(2, sharex=False)
@@ -37,7 +38,7 @@ def plot(s):
     axarr[0].set_title('Sond Wave')
     axarr[0].plot(x[43100:],s[43100:])
     axarr[1].set_title('Fourier')
-    axarr[1].plot(x, np.abs(fft(s)))
+    axarr[1].plot(x, Decibel(np.abs(fft(s))))
     printTom(s)
 
 def printTom(s):
@@ -62,6 +63,16 @@ def printTom(s):
             if np.abs(first_hz-i[0]) < 3 and np.abs(second_hz-i[1]) < 3:
                 print("Tom: ",counter)
             counter += 1
+
+
+def Decibel(value):
+    new = []
+    for i in range (len(value)):
+        newvalue = 10* math.log10(value[i]/20000)
+        new.append(newvalue)
+    return new
+
+
 
 def Path():
     return "./Save/tom_ask.wav"#audio + ".wav"
