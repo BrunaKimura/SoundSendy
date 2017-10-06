@@ -8,73 +8,73 @@ date: Setembro - 2017
 
 ## Comparação de gráficos recebidos e gerados
 <h1> Tom 0 </h1>
-<div align="center"> Frequências geradas (1209,941) X Frequências recebidas () </div>
+<div align="center"> Frequências geradas (1336,941) X Frequências recebidas (1336.03,941.02) </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier0.png.png" width="350"/>
-  <img src="./src/plots/sound0.jpg" width="350"/>
+    <img src="./plots/DecodeF0.png" width="350"/>
 </p>
 
 <h1> Tom 1 </h1>
-<div align="center"> Frequências geradas (1209, 697) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1209, 697) X Frequências recebidas (1209.02,697.01)  </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier1.png" width="350"/>
-  <img src="./src/plots/sound1.jpg" width="350"/>
+    <img src="./plots/DecodeF1.png" width="350"/>
 </p>
 
 <h1> Tom 2 </h1>
-<div align="center"> Frequências geradas (1336,697) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1336,697) X Frequências recebidas (1336.03, 697.01)  </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier2.png" width="350"/>
-  <img src="./src/plots/sound2.jpg" width="350"/>
+   <img src="./plots/DecodeF2.png" width="350"/>
 </p>
 
 <h1> Tom 3 </h1>
-<div align="center"> Frequências geradas (1477,697) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1477,697) X Frequências recebidas (1477.02, 697.01) </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier3.png" width="350"/>
-  <img src="./src/plots/sound3.jpg" width="350"/>
+   <img src="./plots/DecodeF3.png" width="350"/>
 </p>
 
 <h1> Tom 4 </h1>
-<div align="center"> Frequências geradas (1209,770) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1209,770) X Frequências recebidas (1209.02, 770.01) </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier4.png" width="350"/>
-  <img src="./src/plots/sound4.jpg" width="350"/>
+    <img src="./plots/DecodeF4.png" width="350"/>
 </p>
 
 <h1> Tom 5 </h1>
-<div align="center"> Frequências geradas (1336,770) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1336,770) X Frequências recebidas (1336.03, 770.01) </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier5.png" width="350"/>
-  <img src="./src/plots/sound5.jpg" width="350"/>
+    <img src="./plots/DecodeF5.png" width="350"/>
 </p>
 
 <h1> Tom 6 </h1>
-<div align="center"> Frequências geradas (1477,770) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1477,770) X Frequências recebidas (1477.02, 770.01) </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier6.png" width="350"/>
-  <img src="./src/plots/sound6.jpg" width="350"/>
+   <img src="./plots/DecodeF6.png" width="350"/>
 </p>
 
 <h1> Tom 7 </h1>
-<div align="center"> Frequências geradas (1209,852) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1209,852) X Frequências recebidas (1209.02, 852.02) </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier7.png" width="350"/>
-  <img src="./src/plots/sound7.jpg" width="350"/>
+   <img src="./plots/DecodeF7.png" width="350"/>
 </p>
 
 <h1> Tom 8 </h1>
-<div align="center"> Frequências geradas (1336,852) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1336,852) X Frequências recebidas (1336.02, 852.02) </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier8.png" width="350"/>
-  <img src="./src/plots/sound8.jpg" width="350"/>
+   <img src="./plots/DecodeF8.png" width="350"/>
 </p>
 
 <h1> Tom 9 </h1>
-<div align="center"> Frequências geradas (1477,852) X Onda Recebida </div>
+<div align="center"> Frequências geradas (1477,852) X Frequências recebidas (1477.02, 852.02) </div>
 <p align="center">
   <img src="./plots/graphEncoderFurier9.png" width="350"/>
-  <img src="./src/plots/sound9.jpg" width="350"/>
+  <img src="./plots/DecodeF9.png" width="350"/>
 </p>
 
 <h1> Tempo utilizado </h1>
