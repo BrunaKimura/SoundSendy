@@ -77,6 +77,9 @@ date: Setembro - 2017
   <img src="./plots/DecodeF9.png" width="350"/>
 </p>
 
+## consideração sobre os gráficos
+A diferença entre os gráficos da transformada de fourier do sinal emitido e do recebido se deve aos ruídos presente no ambiente na hora de capturar o som, entretanto, os maiores picos que simbolizam a frequência detectada são totalmente compatíveis.
+
 <h1> Tempo utilizado </h1>
 
 Os gráficos foram plotados com os sinais recebidos em intervalos de 1 segundo.
