@@ -82,4 +82,4 @@ A diferença entre os gráficos da transformada de fourier do sinal emitido e do
 
 <h1> Tempo utilizado </h1>
 
-Os gráficos foram plotados com os sinais recebidos em intervalos de 1 segundo.
+Os gráficos foram plotados com os sinais recebidos em intervalos de 1 segundo. O sinal gerado para a detecção, demora menos de 1s para ser reconhecido pelo programa.
