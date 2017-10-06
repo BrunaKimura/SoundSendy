@@ -10,7 +10,7 @@ date: Setembro - 2017
 <h1> Tom 0 </h1>
 <div align="center"> Frequências geradas (1336,941) X Frequências recebidas (1336.03,941.02) </div>
 <p align="center">
-  <img src="./plots/graphEncoderFurier0.png.png" width="350"/>
+  <img src="./plots/graphEncoderFurier0.png" width="350"/>
     <img src="./plots/DecodeF0.png" width="350"/>
 </p>
 
