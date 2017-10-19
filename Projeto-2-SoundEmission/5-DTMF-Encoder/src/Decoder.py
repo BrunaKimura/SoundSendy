@@ -27,26 +27,7 @@ def animate(i):
     axarr[0].set_title('Sond Wave')
     axarr[0].plot(x[43100:],s[43100:])
     axarr[1].set_title('Fourier')
-    allpoints = np.abs(fft(s))
-    peaks_indexes = peakutils.indexes(allpoints[:(len(allpoints)//2)], min_dist=50)
-    peaks = []
-    for i in peaks_indexes:
-        peaks.append(x[i])
-    peaks.sort()
-    if(len(peaks) >= 2):
-        first_hz = peaks[-1]
-        second_hz = peaks[-2]
-        matrix = [
-            [1336,941],[1209,697], [1336,697],
-            [1477,697], [1209,770], [1336,770],
-            [1477,770], [1209,852], [1336,852],
-            [1477,852]
-        ]
-        counter = 0
-        for i in matrix:
-            if np.abs(first_hz-i[0]) < 3 and np.abs(second_hz-i[1]) < 3:
-                print(counter)
-            counter += 1
+
     axarr[1].plot(x,np.abs(fft(s)))
 
 def Path():
