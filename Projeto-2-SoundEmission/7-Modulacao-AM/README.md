@@ -20,16 +20,16 @@ Demodulação é o processo que nos permite reverter o processo de modulação. 
 
 
 ## Gráficos de Exibição
-| Sinal |             Trasmissor             |             Receptor             |
-| ----- | ---------------------------------- | -------------------------------- |
-|  1    |![Img 1](imgs/trasmissorImg1.png)   | ![Img 1](imgs/receptorImg1.png)  |
-|  1    |![Img 2](imgs/trasmissorImg2.png)   | ![Img 2](imgs/receptorImg2.png)  |
-|  1    |![Img 3](imgs/trasmissorImg3.png)   | ![Img 3](imgs/receptorImg3.png)  |
+| Sinal       |             Trasmissor             |             Receptor             |
+| ----------- | ---------------------------------- | -------------------------------- |
+|  Etapa 1    |![Img 1](doc/trasmissorImg1.png)    | ![Img 1](doc/receptorImg1.png)   |
+|  Etapa 2    |![Img 2](doc/trasmissorImg2.png)    | ![Img 2](doc/receptorImg2.png)   |
+|  Etapa 3    |![Img 3](doc/trasmissorImg3.png)    | ![Img 3](doc/receptorImg3.png)   |
 
 
 ## Comparação Do Sinal Enviado e Recebido
 | Sinal |             Trasmissor             |             Receptor             |
 | ----- | ---------------------------------- | -------------------------------- |
-|  1    |![Img 4](imgs/trasmissorImg4.png)   | ![Img 4](imgs/receptorImg4.png)  |
+| ----- |![Img 4](doc/trasmissorImg4.png)    | ![Img 4](doc/receptorImg4.png)   |
 
 
