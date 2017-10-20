@@ -16,13 +16,13 @@ x = np.linspace(0, 44100,44100)
 duration = 1
 
 def main():
-    audioRecive = False
+    audioReceive = False
     print("Codigo Startado")
-    while (audioRecive == False):
+    while (audioReceive == False):
         #Recebe Audio
         if keyboard.is_pressed('q'):
-            audioRecive = True;
-            print("Q clickado")
+            audioReceive = True;
+            print("Q pressionado")
             audio = getAudio()
             plot(audio, "Recieved Wave")
         else:
@@ -70,6 +70,7 @@ def plot(s, name):
     axarr[0].plot(x[43100:],s[43100:])
     axarr[1].set_title('Fourier')
     axarr[1].plot(x, np.abs(fft(s)))
+    plt.savefig("./plotsDem/{0}.png".format(name), dpi = 72)
     plt.show()
 
 def createSin(f,x):
