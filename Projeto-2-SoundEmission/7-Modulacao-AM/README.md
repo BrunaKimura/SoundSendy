@@ -4,6 +4,7 @@ Leonardo Medeiros e Hugo
 Nessa etapa do projeto foi imprementado a Modulação/DeModulação AM.
 
 ## Modulação/Demodulação
+Modulação é o processo de variação de amplitude, de intensidade, frequência, do comprimento e/ou fase de onda numa onda de transporte , que queforma uma das caracteristicas de um sinal portador (amplitude, fase ou frequencia) que varia proporcionalmente ao sinal modulador. 
 
 ##Frequências das Portadoras Utilizadas
 
