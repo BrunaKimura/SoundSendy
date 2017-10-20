@@ -1,7 +1,7 @@
 ﻿# Camada Física - Projeto 2 
 #### Leonardo Medeiros e Hugo
 
-Nessa etapa do projeto foi imprementado a Modulação/DeModulação AM.
+Nessa etapa do projeto foi imprementada a Modulação/DeModulação AM.
 
 ## Modulação
 Modulação é o processo de variação de amplitude, de intensidade, frequência, do comprimento e/ou fase de onda numa onda de transporte , que forma uma das caracteristicas de um sinal portador (amplitude, fase ou frequencia) estes variam proporcionalmente ao sinal modulador.
@@ -14,7 +14,7 @@ A Modulação em Amplitude (AM) desenvolvida nessa etapa é a forma de modulaç�
 Demodulação é o processo que nos permite reverter o processo de modulação. Este metodo consiste em detectatar a onda portadora modulada e extrair dela o sinal modulante.
 
 ## Frequências das Portadoras Utilizadas
-
+Foram utilizadas duas frequencias portadoras, com valores de 10000Hz e 20000Hz.
 
 ## Bandas Ocupadas
 
