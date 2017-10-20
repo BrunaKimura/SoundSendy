@@ -1,7 +1,7 @@
 ﻿# Camada Física - Projeto 2 
-#### Leonardo Medeiros e Hugo
+#### Leonardo Medeiros e Hugo Mendes
 
-Nessa etapa do projeto foi imprementada a Modulação/DeModulação AM.
+Nessa etapa do projeto fo implementada a Modulação/DeModulação AM.
 
 ## Modulação
 Modulação é o processo de variação de amplitude, de intensidade, frequência, do comprimento e/ou fase de onda numa onda de transporte , que forma uma das caracteristicas de um sinal portador (amplitude, fase ou frequencia) estes variam proporcionalmente ao sinal modulador.
