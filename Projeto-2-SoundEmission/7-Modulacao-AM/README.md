@@ -21,7 +21,7 @@ Foram utilizadas duas frequencias portadoras, com valores de 10000Hz e 20000Hz.
 
 ## Gráficos de Exibição
 
-#Receptor
+# Receptor
 
 |![Img 1](doc/receptorImg1.png)    | ![Img 1](doc/receptorImg2.png)   |
 |![Img 2](doc/receptorImg3.png)    | ![Img 2](doc/receptorImg4.png)   |
