@@ -198,13 +198,13 @@ class Emissor_window():
 
 
     def botao_clicado1(self):
-        Encoder.main(675,1209)
+        Encoder.main(697,1209)
 
     def botao_clicado2(self):
-        Encoder.main(675,1336)
+        Encoder.main(697,1336)
     
     def botao_clicado3(self):
-        Encoder.main(675,1477)
+        Encoder.main(697,1477)
     
     def botao_clicado4(self):
         Encoder.main(770,1209)
