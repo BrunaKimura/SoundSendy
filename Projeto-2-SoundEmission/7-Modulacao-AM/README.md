@@ -30,6 +30,6 @@ Foram utilizadas duas frequencias portadoras, com valores de 10000Hz e 20000Hz.
 ## Comparação Do Sinal Enviado e Recebido
 | Sinal |             Trasmissor             |             Receptor             |
 | ----- | ---------------------------------- | -------------------------------- |
-| ----- |![Img 4](doc/trasmissorImg6.png)    | ![Img 4](doc/receptorImg7.png)   |
+| ----- |![Img 4](doc/trasmissorImg6.png)    | ![Img 4](doc/receptorR.png)      |
 
 
