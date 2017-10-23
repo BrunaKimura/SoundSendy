@@ -20,11 +20,13 @@ Foram utilizadas duas frequencias portadoras, com valores de 10000Hz e 20000Hz.
 
 
 ## Gráficos de Exibição
-| Sinal       |             Trasmissor             |             Receptor             |
-| ----------- | ---------------------------------- | -------------------------------- |
-|  Etapa 1    |![Img 1](doc/trasmissorImg1.png)    | ![Img 1](doc/receptorImg1.png)   |
-|  Etapa 2    |![Img 2](doc/trasmissorImg2.png)    | ![Img 2](doc/receptorImg2.png)   |
-|  Etapa 3    |![Img 3](doc/trasmissorImg3.png)    | ![Img 3](doc/receptorImg3.png)   |
+
+#Receptor
+
+| -------------------------------- | ------------------------------ |
+|![Img 1](doc/receptorImg1.png)    | ![Img 1](doc/receptorImg2.png)   |
+|![Img 2](doc/receptorImg3.png)    | ![Img 2](doc/receptorImg4.png)   |
+|![Img 3](doc/receptorImg4.png)    | ![Img 3](doc/receptorImg5.png)   |
 
 
 ## Comparação Do Sinal Enviado e Recebido
