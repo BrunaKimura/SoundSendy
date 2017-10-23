@@ -21,6 +21,15 @@ Foram utilizadas duas frequencias portadoras, com valores de 10000Hz e 20000Hz.
 
 ## Gráficos de Exibição
 
+
+# Emissor
+
+|![Img 1](doc/trasmissorImg1.png)    | ![Img 1](doc/trasmissorImg2.png)   |
+|![Img 2](doc/trasmissorImg3.png)    | ![Img 2](doc/trasmissorImg4.png)   |
+|![Img 1](doc/trasmissorImg7.png)    | ![Img 1](doc/trasmissorImg8.png)   |
+|![Img 2](doc/trasmissorImg9.png)    | ![Img 2](doc/trasmissorImg10.png)  |
+|![Img 1](doc/trasmissorImg11.png)   | -----------------------------------|
+
 # Receptor
 
 |![Img 1](doc/receptorImg1.png)    | ![Img 1](doc/receptorImg2.png)   |
