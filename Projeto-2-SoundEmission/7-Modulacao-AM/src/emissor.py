@@ -77,56 +77,67 @@ sd.wait()
 # plots
 plt.title('Aúdio 1 filtro passa baixa aplicado')
 plt.plot(returnXdata(first),first)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg1"), dpi = 72)
 plt.show()
 #--------------------------
 plt.title('Aúdio 2 filtro passa baixa aplicado')
 plt.plot(returnXdata(second),second)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg2"), dpi = 72)
 plt.show()
 #----------------------------
 plt.title('Aúdio 1 filtro passa baixa aplicado (Fourrier')
 first_audio = np.abs(fft(first))
 first_audio = np.concatenate([first_audio[len(first_audio) // 2:len(first_audio)] ,first_audio[0:len(first_audio) // 2] ])
 plt.plot(np.linspace(-44100/2,44100/2, len(first_audio)),first_audio)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg3"), dpi = 72)
 plt.show()
 #----------------------------
 plt.title('Aúdio 2 filtro passa baixa aplicado (Fourrier')
 second_audio = np.abs(fft(second))
 second_audio = np.concatenate([second_audio[len(second_audio) // 2:len(second_audio)] ,second_audio[0:len(second_audio) // 2] ])
 plt.plot(np.linspace(-44100/2,44100/2, len(second_audio)),second_audio)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg4"), dpi = 72)
 plt.show()
 #----------------------------
 plt.title('Portadora 1 (5000)')
 plt.plot(genetate_portadora(5000))
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg5"), dpi = 72)
 plt.show()
 #-----------------------------
 plt.title('Portadora 2 (1000)')
 plt.plot(genetate_portadora(10000))
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg6"), dpi = 72)
 plt.show()
 #-----------------------------
 plt.title('audio 1 modulado no tempo')
 plt.plot(returnXdata(modulated_audio_one),modulated_audio_one)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg7"), dpi = 72)
 plt.show()
 #-------------------------------
 plt.title('audio 2 modulado no tempo')
 plt.plot(returnXdata(modulated_audio_two),modulated_audio_two)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg8"), dpi = 72)
 plt.show()
 #---------------------------------
 plt.title('Aúdio 1 modulado (Fourrier')
 modulated_audio_one = np.abs(fft(modulated_audio_one))
 modulated_audio_one = np.concatenate([modulated_audio_one[len(modulated_audio_one) // 2:len(modulated_audio_one)] ,modulated_audio_one[0:len(modulated_audio_one) // 2] ])
 plt.plot(np.linspace(-44100/2,44100/2, len(modulated_audio_one)),modulated_audio_one)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg9"), dpi = 72)
 plt.show()
 #-----------------------------------
 plt.title('Aúdio 2 modulado (Fourrier')
 modulated_audio_two = np.abs(fft(modulated_audio_two))
 modulated_audio_two = np.concatenate([modulated_audio_two[len(modulated_audio_two) // 2:len(modulated_audio_two)] ,modulated_audio_two[0:len(modulated_audio_two) // 2] ])
 plt.plot(np.linspace(-44100/2,44100/2, len(modulated_audio_two)),modulated_audio_two)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg10"), dpi = 72)
 plt.show()
 #------------------------------------
 plt.title("Fourier dos sinais modulados somados")
 resultant_audio = np.abs(fft(resultant_audio))
 resultant_audio = np.concatenate([resultant_audio[len(resultant_audio) // 2:len(resultant_audio)] ,resultant_audio[0:len(resultant_audio) // 2] ])
 plt.plot(np.linspace(-44100/2,44100/2, len(resultant_audio)),resultant_audio)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorImg11"), dpi = 72)
 plt.show()
 
 
