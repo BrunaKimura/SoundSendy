@@ -24,22 +24,21 @@ Foram utilizadas duas frequencias portadoras, com valores de 10000Hz e 20000Hz.
 
 # Emissor
 
-|![Img 1](doc/trasmissorImg1.png)    | ![Img 1](doc/trasmissorImg2.png)   |
-|![Img 2](doc/trasmissorImg3.png)    | ![Img 2](doc/trasmissorImg4.png)   |
-|![Img 1](doc/trasmissorImg7.png)    | ![Img 1](doc/trasmissorImg8.png)   |
-|![Img 2](doc/trasmissorImg9.png)    | ![Img 2](doc/trasmissorImg10.png)  |
-|![Img 1](doc/trasmissorImg11.png)   | -----------------------------------|
+![Img 1](doc/trasmissorImg1.png)     ![Img 1](doc/trasmissorImg2.png)   
+![Img 2](doc/trasmissorImg3.png)     ![Img 2](doc/trasmissorImg4.png)   
+![Img 1](doc/trasmissorImg7.png)     ![Img 1](doc/trasmissorImg8.png)   
+![Img 2](doc/trasmissorImg9.png)     ![Img 2](doc/trasmissorImg10.png)  
+![Img 1](doc/trasmissorImg11.png)   
 
 # Receptor
 
-|----------------------------------|--------------------------------- |
-|![Img 1](doc/receptorImg1.png)    | ![Img 1](doc/receptorImg2.png)   |
-|![Img 2](doc/receptorImg3.png)    | ![Img 2](doc/receptorImg4.png)   |
+![Img 1](doc/receptorImg1.png)     ![Img 1](doc/receptorImg2.png)   
+![Img 2](doc/receptorImg3.png)     ![Img 2](doc/receptorImg4.png)   
 
 
 ## Comparação Do Sinal Enviado e Recebido
 | Sinal |             Trasmissor             |             Receptor             |
 | ----- | ---------------------------------- | -------------------------------- |
-| ----- |![Img 4](doc/trasmissorImg20.png)    | ![Img 4](doc/receptorR.png)      |
+| ----- |![Img 4](doc/trasmissorImg20.png)   | ![Img 4](doc/receptorR.png)     |
 
 
