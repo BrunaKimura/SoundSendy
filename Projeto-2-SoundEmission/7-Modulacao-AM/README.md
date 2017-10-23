@@ -17,12 +17,11 @@ Demodulação é o processo que nos permite reverter o processo de modulação. 
 Foram utilizadas duas frequencias portadoras, com valores de 10000Hz e 20000Hz.
 
 ## Bandas Ocupadas
-
+As bandas ocupadas foram de 3000hz, conforme a frequencia de corte utilizada pelo filtro.
 
 ## Gráficos de Exibição
 
-
-# Emissor
+### Emissor
 
 ![Img 1](doc/trasmissorImg1.png)     ![Img 1](doc/trasmissorImg2.png)   
 ![Img 2](doc/trasmissorImg3.png)     ![Img 2](doc/trasmissorImg4.png)   
@@ -30,7 +29,7 @@ Foram utilizadas duas frequencias portadoras, com valores de 10000Hz e 20000Hz.
 ![Img 2](doc/trasmissorImg9.png)     ![Img 2](doc/trasmissorImg10.png)  
 ![Img 1](doc/trasmissorImg11.png)   
 
-# Receptor
+### Receptor
 
 ![Img 1](doc/receptorImg1.png)     ![Img 1](doc/receptorImg2.png)   
 ![Img 2](doc/receptorImg3.png)     ![Img 2](doc/receptorImg4.png)   
