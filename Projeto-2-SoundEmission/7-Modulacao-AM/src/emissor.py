@@ -74,6 +74,21 @@ print('Reproduzindo audio final....')
 sd.play(resultant_audio,44100)
 sd.wait()
 
+
+plt.title('Enviado')
+plt.plot(returnXdata(resultant_audio),resultant_audio)
+plt.savefig("./plotsMod/{0}.png".format("trasmissorR"), dpi = 72)
+plt.show()
+
+
+plt.title('Enviado')
+plt.plot(returnXdata(np.abs(fft(resultant_audio))),np.abs(fft(resultant_audio)))
+plt.savefig("./plotsMod/{0}.png".format("trasmissorR2"), dpi = 72)
+plt.show()
+
+
+
+
 # plots
 plt.title('Aúdio 1 filtro passa baixa aplicado')
 plt.plot(returnXdata(first),first)
