@@ -37,10 +37,10 @@ As bandas ocupadas foram de 3000hz, conforme a frequencia de corte utilizada pel
 
 ## Comparação Do Sinal Enviado e Recebido
 
-###Trasmissor  
+### Trasmissor  
 [Img 10](doc/trasmissorR.png)
 [Img 11](doc/trasmissorR2.png)
 
-###Receptor     
+### Receptor     
 ![Img 4](doc/receptorR.png)
 
